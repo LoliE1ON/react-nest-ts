@@ -8,6 +8,7 @@ import {Header} from "./components/Header";
 import {Home} from "./views/Home";
 import {Login} from "./views/Login";
 import {NotFound} from "./views/NotFound";
+import {Blog} from "./views/Blog";
 
 class App extends React.Component {
     render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
                         <Switch>
                             <Route path="/" exact component={Home}/>
                             <Route path="/auth/login" component={Login}/>
+                            <Route path="/blog" component={Blog}/>
                             <Route component={NotFound}/>
                         </Switch>
                     </main>

@@ -26,6 +26,7 @@ class HeaderComponent extends React.Component<IHeaderProps> {
                         <Typography variant="h6" className={classes.title}>
                             Application
                         </Typography>
+                        <Button color="inherit" component={Link} to="/blog">Blog</Button>
                         <Button color="inherit" component={Link} to="/auth/login">Login</Button>
                     </Toolbar>
                 </AppBar>

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
@@ -63,7 +66,7 @@
       <workItem from="1580199893032" duration="4876000" />
       <workItem from="1580382672207" duration="1209000" />
       <workItem from="1580399543703" duration="11493000" />
-      <workItem from="1580454997401" duration="9727000" />
+      <workItem from="1580454997401" duration="14476000" />
     </task>
     <servers />
   </component>
@@ -71,6 +74,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580479126615">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1580479126615" />
     <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580128601236">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
