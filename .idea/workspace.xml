@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/TodoFormNew.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/TodoList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/interfaces/AddNewTodo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/interfaces/Todo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/interfaces/TodoListProps.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NotFound.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WyNBibOJ3zre4kFJQix6uApOPF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\Dev\Web\react-ts\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\Web\react-ts\src\components\auth\login" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="" />
+      <created>1580117740750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580117740750</updated>
+      <workItem from="1580117743304" duration="706000" />
+      <workItem from="1580118479074" duration="50000" />
+      <workItem from="1580118544577" duration="5206000" />
+      <workItem from="1580128487325" duration="56000" />
+      <workItem from="1580128581279" duration="21000" />
+      <workItem from="1580199893032" duration="4876000" />
+      <workItem from="1580382672207" duration="1209000" />
+      <workItem from="1580399543703" duration="11493000" />
+      <workItem from="1580454997401" duration="9727000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580128601236">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1580128601236" />
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1580118288678">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1580118288678" />
+    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1580118288677">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1580118288677" />
+    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1580118288677">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1580118288677" />
+    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1580118288677">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1580118288677" />
+    <state x="277" y="60" key="SettingsEditor" timestamp="1580118530046">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1580118530046" />
+  </component>
+</project>
