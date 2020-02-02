@@ -1,25 +1,16 @@
-/*
- * action types
- */
+import {IAction} from "./interfaces/Action";
+import {IData} from "./interfaces/Data";
 
-export const ADD_BLOG = "ADD_BLOG";
+// Action types
+export const ADD_NEW_BLOG = "ADD_BLOG";
 
-/*
- * action creators
- */
-
-interface IAction {
-    type: string,
-    payload: {
-        description: string,
-    }
-}
-
-export function addBlog(description: string): IAction {
+// action creators
+export function addNewBlog(data: IData): IAction {
     return {
-        type: ADD_BLOG,
+        type: ADD_NEW_BLOG,
         payload: {
-            description
-        }
+            description: data.description,
+            date: data.date,
+        },
     }
 }

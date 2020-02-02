@@ -1,32 +1,24 @@
-import {ADD_BLOG} from "./actions";
+import {ADD_NEW_BLOG} from "./actions";
+import {IAction} from "./interfaces/Action";
+import {IBlogArrayState} from "./interfaces/BlogArrayState";
 
-interface IAction {
-    type: string,
-    payload: object,
-}
-
-interface IBlogState {
-    description: string,
-}
-
-const initialState: IBlogState[] = [];
+const initialState: IBlogArrayState = {
+    items: [],
+};
 
 export const blogReducer = (state = initialState, action: IAction) => {
 
     switch (action.type) {
-        case ADD_BLOG: {
-
-            const newArray = [
-                {
-                    description: action.payload
-                },
-                ...state
-            ];
-            console.log(newArray)
-            return newArray;
-
-
-            //return Object.assign({}, state, action.payload)
+        case ADD_NEW_BLOG: {
+            return Object.assign({}, state, {
+                items: [
+                    ...state.items,
+                    {
+                        description: action.payload.description,
+                        date: action.payload.date,
+                    }
+                ]
+            });
         }
     }
     return state;

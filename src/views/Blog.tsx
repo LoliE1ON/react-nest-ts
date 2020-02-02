@@ -1,17 +1,18 @@
 import React from "react";
-import {Dispatch} from 'redux';
 import {BlogForm} from "../components/blog/BlogForm";
 import {Container} from "@material-ui/core";
 import {connect} from "react-redux";
-import {addBlog} from "../store/blog/actions";
-import {IBlogFormProps} from "../components/blog/interfaces/BlogFormProps";
+import {addNewBlog} from "../store/blog/actions";
+import {IBlogProps} from "./interfaces/BlogProps";
+import {BlogList} from "../components/blog/BlogList";
 
-class BlogContainer extends React.Component<IBlogFormProps> {
+class BlogContainer extends React.Component<IBlogProps> {
     render() {
         return(
             <div className="pt1">
                 <Container maxWidth="md">
-                    <BlogForm addBlog={this.props.addBlog}/>
+                    <BlogForm addNewBlog={this.props.addNewBlog}/>
+                    <BlogList blogs={this.props.blogs}/>
                 </Container>
             </div>
         );
@@ -20,12 +21,12 @@ class BlogContainer extends React.Component<IBlogFormProps> {
 
 const mapStateToProps = (state: any) => {
     return {
-        description: state.blog
+        blogs: state.blog
     }
 }
 
 const mapDispatchToProps = {
-    addBlog,
+    addNewBlog,
 };
 
 export const Blog = connect(mapStateToProps, mapDispatchToProps)(BlogContainer);

@@ -15,7 +15,10 @@ export class BlogFormComponent extends React.Component<IBlogFormProps, IBlogForm
 
     private onAddBlog = (event: React.KeyboardEvent) => {
         if (this.description.current && event.key === "Enter" && this.description.current.value.length > 0) {
-            this.props.addBlog(this.description.current.value)
+            this.props.addNewBlog({
+                description: this.description.current.value,
+                date: '123',
+            });
         }
     };
 

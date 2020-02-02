@@ -1,6 +1,8 @@
+import {IBlogState} from "../../../store/blog/interfaces/BlogState";
+
 export interface IBlogFormProps {
     classes: {
         field: string,
     },
-    addBlog(description: string): object,
+    addNewBlog(object: IBlogState): object
 }

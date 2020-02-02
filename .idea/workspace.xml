@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/blog/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/blog/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/BlogList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/Action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/BlogArrayState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/BlogState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/Data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/interfaces/BlogProps.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/blog/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/blog/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/blog/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/blog/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +63,10 @@
       <workItem from="1580199893032" duration="4876000" />
       <workItem from="1580382672207" duration="1209000" />
       <workItem from="1580399543703" duration="11493000" />
-      <workItem from="1580454997401" duration="20936000" />
+      <workItem from="1580454997401" duration="20977000" />
+      <workItem from="1580553312755" duration="213000" />
+      <workItem from="1580556202350" duration="4750000" />
+      <workItem from="1580674010282" duration="3618000" />
     </task>
     <servers />
   </component>
