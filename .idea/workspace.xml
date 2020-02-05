@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/blog/BlogList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/Action.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/BlogArrayState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/BlogState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/blog/interfaces/Data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/interfaces/BlogProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/User/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/SetCurrentUserAction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/UserState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/User/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/AuthActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/AuthState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/IsLoadingAction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/ToggleAuthAction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/interfaces/LoginProps.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogFormProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/blog/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/blog/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/blog/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/blog/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +76,11 @@
       <workItem from="1580454997401" duration="20977000" />
       <workItem from="1580553312755" duration="213000" />
       <workItem from="1580556202350" duration="4750000" />
-      <workItem from="1580674010282" duration="3618000" />
+      <workItem from="1580674010282" duration="3688000" />
+      <workItem from="1580711497120" duration="1217000" />
+      <workItem from="1580734697924" duration="611000" />
+      <workItem from="1580824751090" duration="6996000" />
+      <workItem from="1580890908144" duration="7795000" />
     </task>
     <servers />
   </component>
@@ -78,10 +92,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1580479126615" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580128601236">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580738888269">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1580128601236" />
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1580738888269" />
     <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1580118288678">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

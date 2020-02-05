@@ -17,19 +17,11 @@ class LoginFormComponent extends React.Component<ILoginFormProps, ILoginFormStat
 
         this.login = React.createRef();
         this.password = React.createRef();
-
-        this.state = {
-            login: '',
-            password: '',
-        };
     }
 
     private handleLoginClick = () => {
         if (this.login.current && this.password.current) {
-            this.setState({
-                login: this.login.current.value,
-                password: this.password.current.value,
-            });
+            this.props.fetchUserAuth(this.login.current.value, this.password.current.value);
         }
     }
 
@@ -37,9 +29,6 @@ class LoginFormComponent extends React.Component<ILoginFormProps, ILoginFormStat
         const { classes } = this.props;
         return (
             <Box p={3}>
-
-                <p>Login: {this.state.login}</p>
-                <p>Password: {this.state.password}</p>
 
                 <Box fontSize={22} textAlign="center">Login</Box>
 

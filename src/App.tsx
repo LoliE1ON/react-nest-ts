@@ -1,8 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import {createStore} from "redux";
+import {createStore, applyMiddleware} from 'redux';
 import {Provider} from "react-redux";
 import rootReducer from "./store/rootReducer";
+import thunk from 'redux-thunk';
+import logger from 'redux-logger'
 
 import './style.css';
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -13,7 +15,7 @@ import {Login} from "./views/Login";
 import {NotFound} from "./views/NotFound";
 import {Blog} from "./views/Blog";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 class App extends React.Component {
     render() {
