@@ -4,6 +4,8 @@ export interface ILoginFormProps {
         errorBox: string,
     };
     fetchUserAuth(login: string, password: string): void;
+    setShowError(show: boolean): void;
     isLoading: boolean,
     isAuth: boolean,
+    showError: boolean,
 }

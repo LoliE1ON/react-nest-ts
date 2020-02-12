@@ -15,7 +15,7 @@ import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import {ILoginFormProps} from "./interfaces/ILoginFormProps";
 
 
-class LoginFormComponent extends React.Component<ILoginFormProps, {showError: boolean}> {
+class LoginFormComponent extends React.Component<ILoginFormProps> {
 
     private readonly login: RefObject<HTMLInputElement>;
     private readonly password: RefObject<HTMLInputElement>;
@@ -23,25 +23,19 @@ class LoginFormComponent extends React.Component<ILoginFormProps, {showError: bo
     constructor(props: ILoginFormProps) {
         super(props);
 
-        this.state = { showError: false };
-
         this.login = React.createRef();
         this.password = React.createRef();
     }
 
     private handleLoginClick = () => {
         if (this.login.current && this.password.current) {
-
-            this.setState({ showError: false });
+            this.props.setShowError(false);
             this.props.fetchUserAuth(this.login.current.value, this.password.current.value);
-
-            if(!this.props.isLoading && !this.props.isAuth) this.setState({ showError: true });
-
         }
     };
 
     render() {
-        const { isLoading, classes } = this.props;
+        const { showError, isLoading, classes } = this.props;
 
         const error = () => (
             <Box className={classes.errorBox} p={3}>
@@ -54,7 +48,7 @@ class LoginFormComponent extends React.Component<ILoginFormProps, {showError: bo
         return (
             <div>
 
-                {this.state.showError ? error() : null}
+                {showError ? error() : null}
 
                 <Box p={3}>
 
