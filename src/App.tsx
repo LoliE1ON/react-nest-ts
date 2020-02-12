@@ -1,10 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from "react-redux";
-import rootReducer from "./store/rootReducer";
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'
+import rootReducer from "./store/rootReducer";
 
 import './style.css';
 import CssBaseline from "@material-ui/core/CssBaseline";

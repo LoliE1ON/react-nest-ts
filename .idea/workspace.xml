@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/User/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/SetCurrentUserAction.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/User/interfaces/UserState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/User/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/AuthActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/AuthState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/IsLoadingAction.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/interfaces/ToggleAuthAction.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/auth/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/interfaces/LoginProps.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/interfaces/BlogListProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/interfaces/ILoginFormState.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/interfaces/LoginProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/interfaces/LoginProps.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +33,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react-redux/index.d.ts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="ts.external.directory.path" value="D:\Dev\Web\react-ts\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -80,7 +66,19 @@
       <workItem from="1580711497120" duration="1217000" />
       <workItem from="1580734697924" duration="611000" />
       <workItem from="1580824751090" duration="6996000" />
-      <workItem from="1580890908144" duration="7795000" />
+      <workItem from="1580890908144" duration="7883000" />
+      <workItem from="1580915786945" duration="3482000" />
+      <workItem from="1580983694823" duration="168000" />
+      <workItem from="1580985293035" duration="640000" />
+      <workItem from="1580987651843" duration="124000" />
+      <workItem from="1581080559258" duration="1265000" />
+      <workItem from="1581082677942" duration="1443000" />
+      <workItem from="1581365102267" duration="600000" />
+      <workItem from="1581370112189" duration="22000" />
+      <workItem from="1581409738995" duration="1492000" />
+      <workItem from="1581430072529" duration="45000" />
+      <workItem from="1581506206535" duration="1223000" />
+      <workItem from="1581507480764" duration="2165000" />
     </task>
     <servers />
   </component>
@@ -92,10 +90,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1580479126615" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580738888269">
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581506874526">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1580738888269" />
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1581506874526" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1581430157321">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1581430157321" />
     <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1580118288678">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -112,9 +114,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1580118288677" />
-    <state x="277" y="60" key="SettingsEditor" timestamp="1580118530046">
+    <state x="521" y="44" key="SettingsEditor" timestamp="1580985936355">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1580118530046" />
+    <state x="521" y="44" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1580985936355" />
+    <state x="459" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1580983734516">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="459" y="217" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1580983734516" />
   </component>
 </project>
