@@ -3,18 +3,20 @@ import {Link} from "react-router-dom";
 
 import {AppBar, createStyles, IconButton, Button, Theme, Toolbar, Typography, withStyles} from "@material-ui/core";
 import AppsIcon from '@material-ui/icons/Apps';
+import {connect} from "react-redux";
 
 interface IHeaderProps {
+    isAuth?: boolean;
     classes: {
         root: string,
         menuButton: string,
         title: string,
-    }
+    };
 }
 
 class HeaderComponent extends React.Component<IHeaderProps> {
     render() {
-        const { classes } = this.props;
+        const { isAuth, classes } = this.props;
         return (
             <div className={classes.root}>
                 <AppBar position="static">
@@ -26,8 +28,13 @@ class HeaderComponent extends React.Component<IHeaderProps> {
                         <Typography variant="h6" className={classes.title}>
                             Application
                         </Typography>
-                        <Button color="inherit" component={Link} to="/blog">Blog</Button>
-                        <Button color="inherit" component={Link} to="/auth/login">Login</Button>
+
+                        { isAuth ?
+                            <Button color="inherit" component={Link} to="/blog">Blog</Button>
+                            :
+                            <Button color="inherit" component={Link} to="/auth/login">Login</Button>
+                        }
+
                     </Toolbar>
                 </AppBar>
             </div>
@@ -48,4 +55,8 @@ const styles = (theme: Theme) => createStyles({
     },
 });
 
-export const Header = withStyles(styles)(HeaderComponent);
+const mapStateToProps = (state: any) => ({
+    isAuth: state.auth.isAuth
+});
+
+export const Header = connect(mapStateToProps, null)(withStyles(styles)(HeaderComponent));

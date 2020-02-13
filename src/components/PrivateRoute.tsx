@@ -8,11 +8,11 @@ interface IPrivateRouteProps {
     isAuth?: boolean;
 }
 
-export class PrivateRouteContainer extends React.Component<IPrivateRouteProps> {
+class PrivateRouteContainer extends React.Component<IPrivateRouteProps> {
     render() {
         return (
             <React.Fragment>
-                { this.props.isAuth ? <Route path={this.props.path} component={this.props.component}/> : <Redirect to="/"/> }
+                { this.props.isAuth ? <Route path={this.props.path} component={this.props.component}/> : <Redirect to="/auth/login"/> }
             </React.Fragment>
         );
     }
