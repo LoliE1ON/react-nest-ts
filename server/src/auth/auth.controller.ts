@@ -7,12 +7,16 @@ import {UserAuthDto} from './dto/userAuth.dto';
 import {AuthenticationError} from './exceptions/authenticationError.exception';
 import {IToken} from '../token/interfaces/token.interface';
 import {ApiBadRequestResponse, ApiBody, ApiCreatedResponse, ApiForbiddenResponse, ApiOkResponse} from '@nestjs/swagger';
+import {VerifyTokenDto} from "./dto/verifyToken.dto";
+import {TokenService} from "../token/token.service";
+import {VerifyTokenError} from "./exceptions/VerifyTokenError.exception";
 
 @Controller('auth')
 export class AuthController {
     constructor(
         private readonly authService: AuthService,
         private readonly userService: UserService,
+        private readonly tokenService: TokenService,
     ) {}
 
     // Auth user
@@ -60,5 +64,26 @@ export class AuthController {
             message: 'You have successfully registered',
             user: token,
         };
+    }
+
+    // Verify token
+    @ApiBody({ type: [VerifyTokenDto]})
+    @UsePipes(new ValidationPipe())
+    @Post('verifyToken')
+    async verifyToken(@Body() verifyTokenDto: VerifyTokenDto) {
+
+        // Validation auth data
+        const verify: boolean = await this.authService.verifyToken(verifyTokenDto.token);
+        if (verify) {
+            const token: IToken = await this.tokenService.get(verifyTokenDto.token);
+            return {
+                user: {
+                    userId: token.userId,
+                    token: token.token,
+                    exp: token.exp,
+                },
+            };
+        }
+        throw new VerifyTokenError();
     }
 }

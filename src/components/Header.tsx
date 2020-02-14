@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 import {AppBar, createStyles, IconButton, Button, Theme, Toolbar, Typography, withStyles} from "@material-ui/core";
 import AppsIcon from '@material-ui/icons/Apps';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import {connect} from "react-redux";
 
 interface IHeaderProps {
@@ -30,7 +31,10 @@ class HeaderComponent extends React.Component<IHeaderProps> {
                         </Typography>
 
                         { isAuth ?
-                            <Button color="inherit" component={Link} to="/blog">Blog</Button>
+                            <div>
+                                <Button color="inherit" component={Link} to="/blog">Blog</Button>
+                                <Button color="inherit" component={Link} to="/logout"><ExitToAppIcon/></Button>
+                            </div>
                             :
                             <Button color="inherit" component={Link} to="/auth/login">Login</Button>
                         }

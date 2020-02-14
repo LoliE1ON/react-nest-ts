@@ -6,7 +6,7 @@ const initialState: IUserState = {
     currentUser: {
         _id: '',
         login: '',
-        accessToken: '',
+        token: '',
     },
 };
 

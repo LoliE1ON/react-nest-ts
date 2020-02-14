@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/auth/dto/verifyToken.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/exceptions/VerifyTokenError.exception.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Logout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/token/token.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/User/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/User/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/auth/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/actions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WyNBibOJ3zre4kFJQix6uApOPF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -78,7 +87,10 @@
       <workItem from="1581507480764" duration="4531000" />
       <workItem from="1581588951176" duration="5694000" />
       <workItem from="1581613983015" duration="2599000" />
-      <workItem from="1581666740120" duration="1163000" />
+      <workItem from="1581666740120" duration="2315000" />
+      <workItem from="1581673629807" duration="4460000" />
+      <workItem from="1581679740197" duration="598000" />
+      <workItem from="1581687466293" duration="1304000" />
     </task>
     <servers />
   </component>

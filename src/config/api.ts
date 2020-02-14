@@ -4,6 +4,7 @@ export const API = {
         auth: {
             login: "auth/login",
             register: "auth/register",
+            verifyToken: "auth/verifyToken"
         },
         blog: {
             create: "blog/create",

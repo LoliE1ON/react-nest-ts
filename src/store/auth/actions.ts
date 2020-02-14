@@ -53,6 +53,7 @@ export const fetchUserAuth = (login: string, password: string): ThunkAction<Prom
             if(response.ok) {
                 response.json().then(function(data) {
                     const user: IUser = data.user;
+                    localStorage.token = user.token;
                     dispatch(setCurrentUser(user));
                     dispatch(toggleAuth(true));
                 });
@@ -61,6 +62,34 @@ export const fetchUserAuth = (login: string, password: string): ThunkAction<Prom
         }).catch(reason => {
             dispatch(isLoading(false));
         });
+
+    }
+}
+
+export const verifyToken = (token: string): ThunkAction<Promise<void>, {}, {}, AnyAction> => {
+    // Invoke API
+    return async (dispatch: ThunkDispatch<{}, {}, AnyAction>): Promise<void> => {
+
+        const url = `${API.host}${API.routes.auth.verifyToken}`;
+
+        return fetch(url, {
+            method: "POST",
+            headers: {'Content-Type': 'application/json', Accept: 'application/json',},
+            body: JSON.stringify({ token }),
+        })
+            .then(response => {
+                if(response.ok) {
+                    response.json().then(function(data) {
+                        const user: IUser = data.user;
+                        localStorage.token = user.token;
+                        dispatch(setCurrentUser(user));
+                        dispatch(toggleAuth(true));
+                    });
+                }
+
+            }).catch(reason => {
+
+            });
 
     }
 }
