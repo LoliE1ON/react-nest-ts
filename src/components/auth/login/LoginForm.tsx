@@ -1,4 +1,5 @@
 import React, {RefObject} from 'react';
+import { Redirect } from 'react-router-dom';
 import {
     Box,
     TextField,
@@ -14,7 +15,6 @@ import PersonIcon from '@material-ui/icons/Person';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import {ILoginFormProps} from "./interfaces/ILoginFormProps";
 
-
 class LoginFormComponent extends React.Component<ILoginFormProps> {
 
     private readonly login: RefObject<HTMLInputElement>;
@@ -29,30 +29,26 @@ class LoginFormComponent extends React.Component<ILoginFormProps> {
 
     private handleLoginClick = () => {
         if (this.login.current && this.password.current) {
-            this.props.setShowError(false);
             this.props.fetchUserAuth(this.login.current.value, this.password.current.value);
         }
     };
 
     render() {
-        const { showError, isLoading, classes } = this.props;
+        const { isAuth, showError, isLoading, classes } = this.props;
 
-        const error = () => (
-            <Box className={classes.errorBox} p={3}>
-                Login or password incorrect!
-            </Box>
-        );
-
+        const error = () => (<Box className={classes.errorBox} p={3}>Login or password incorrect!</Box>);
         const loading = () => (<LinearProgress variant="query" />);
+        const redirect = () => (<Redirect to="/home"/>);
 
         return (
             <div>
 
-                {showError ? error() : null}
+                {isAuth && redirect()}
+                {showError && error()}
 
                 <Box p={3}>
 
-                    {isLoading ? loading() : null}
+                    {isLoading && loading()}
 
                     <Box fontSize={22} textAlign="center">Login</Box>
 

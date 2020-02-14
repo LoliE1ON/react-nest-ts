@@ -40,18 +40,10 @@ export const fetchUserAuth = (login: string, password: string): ThunkAction<Prom
     // Invoke API
     return async (dispatch: ThunkDispatch<{}, {}, AnyAction>): Promise<void> => {
 
+        dispatch(setShowError(false));
         dispatch(isLoading(true));
         const url = `${API.host}${API.routes.auth.login}`;
 
-        return new Promise(function(resolve) {
-            setTimeout(function() {
-                dispatch(isLoading(false));
-                dispatch(setShowError(true));
-                resolve();
-            }, 1000);
-        });
-
-        /*
         return fetch(url, {
             method: "POST",
             headers: {'Content-Type': 'application/json', Accept: 'application/json',},
@@ -59,23 +51,16 @@ export const fetchUserAuth = (login: string, password: string): ThunkAction<Prom
         })
         .then(response => {
             if(response.ok) {
-                try {
-                    response.json().then(function(data) {
-                        const user: IUser = data.user;
-                        dispatch(setCurrentUser(user));
-                        dispatch(toggleAuth(true));
-                    });
-                } catch (e) {
-                    console.log(e)
-                }
-            }
+                response.json().then(function(data) {
+                    const user: IUser = data.user;
+                    dispatch(setCurrentUser(user));
+                    dispatch(toggleAuth(true));
+                });
+            } else dispatch(setShowError(true));
             dispatch(isLoading(false));
         }).catch(reason => {
             dispatch(isLoading(false));
         });
-
-        */
-
 
     }
 }
