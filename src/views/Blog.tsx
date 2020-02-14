@@ -1,36 +1,25 @@
 import React from "react";
 import {BlogForm} from "../components/blog/BlogForm";
-
-import {Breadcrumbs, Container, Link, Typography} from "@material-ui/core";
-import AppsIcon from '@material-ui/icons/Apps';
-
 import {connect} from "react-redux";
 import {addNewBlog} from "../store/blog/actions";
 import {IBlogProps} from "./interfaces/BlogProps";
 import {BlogList} from "../components/blog/BlogList";
+import {Container} from "@material-ui/core";
+import {BreadcrumbsComponent} from "../components/common/Breadcrumbs";
 
 class BlogContainer extends React.Component<IBlogProps> {
     render() {
         return(
             <div className="pt1">
-
-                <Breadcrumbs aria-label="breadcrumb">
-                    <Link color="inherit" href="/">
-                        <AppsIcon/>
-                        Home
-                    </Link>
-                    <Typography color="textPrimary">
-                        Blog
-                    </Typography>
-                </Breadcrumbs>
-
                 <Container maxWidth="md">
+                    <BreadcrumbsComponent/>
                     <BlogForm addNewBlog={this.props.addNewBlog}/>
                     <BlogList blogs={this.props.blogs}/>
                 </Container>
             </div>
         );
     }
+
 }
 
 const mapStateToProps = (state: any) => {

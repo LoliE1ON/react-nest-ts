@@ -1,8 +1,9 @@
 import React, {RefObject} from "react";
-import {Box, createStyles, TextField, Theme, withStyles} from "@material-ui/core";
+import {Box, Container, createStyles, Paper, TextField, Theme, withStyles} from "@material-ui/core";
 
 import {IBlogFormProps} from "./interfaces/BlogFormProps";
 import {IBlogFormState} from "./interfaces/BlogFormState";
+import {LoginForm} from "../auth/login/LoginForm";
 
 export class BlogFormComponent extends React.Component<IBlogFormProps, IBlogFormState> {
 
@@ -26,11 +27,16 @@ export class BlogFormComponent extends React.Component<IBlogFormProps, IBlogForm
         const { classes } = this.props;
         return(
             <div>
-                <Box fontSize={22} textAlign="center">Your Blog</Box>
-                <TextField
-                    inputRef={this.description} className={classes.field}
-                    id="description" label="What's happened?" variant="filled" onKeyPress={this.onAddBlog}
-                />
+
+                <Paper elevation={1}>
+                    <Box p={4} textAlign="center">
+                        <TextField
+                        inputRef={this.description} className={classes.field} variant="outlined"
+                        id="description" label="What's happened?" multiline rows="4" onKeyPress={this.onAddBlog}
+                    />
+                    </Box>
+                </Paper>
+
             </div>
         );
     }
@@ -39,7 +45,6 @@ export class BlogFormComponent extends React.Component<IBlogFormProps, IBlogForm
 const styles = (theme: Theme) => createStyles({
     field: {
         width: '100%',
-        marginTop: 20,
         boxSizing: 'border-box'
     },
 });

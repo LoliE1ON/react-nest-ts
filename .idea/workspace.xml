@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/auth/dto/verifyToken.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/auth/exceptions/VerifyTokenError.exception.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Breadcrumbs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/interfaces/BreadcrumbsProps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/token/token.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/User/interfaces/IUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/User/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/User/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/auth/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
       <workItem from="1581666740120" duration="2315000" />
       <workItem from="1581673629807" duration="4460000" />
       <workItem from="1581679740197" duration="598000" />
-      <workItem from="1581687466293" duration="1304000" />
+      <workItem from="1581687466293" duration="3432000" />
     </task>
     <servers />
   </component>
