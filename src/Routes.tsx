@@ -19,12 +19,10 @@ interface IRoutesComponentProps {
 
 const RoutesComponent: React.FC<IRoutesComponentProps> = (props) => {
 
+    // Auth user if token exist in local storage
     useEffect(() => {
-        // Auth user if token exist in local storage
-        if (localStorage.token && !props.isAuth) {
-            props.verifyToken(localStorage.token);
-        }
-    });
+        if (localStorage.token && !props.isAuth) props.verifyToken(localStorage.token);
+    }, [props.isAuth, localStorage.token]);
 
     return (
         <Router>
