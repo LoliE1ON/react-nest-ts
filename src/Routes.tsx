@@ -11,6 +11,7 @@ import {connect} from "react-redux";
 import { verifyToken } from './store/auth/actions';
 import './style.css';
 import {Logout} from "./views/Logout";
+import {User} from "./views/User";
 
 interface IRoutesComponentProps {
     isAuth: boolean;
@@ -21,8 +22,10 @@ const RoutesComponent: React.FC<IRoutesComponentProps> = (props) => {
 
     // Auth user if token exist in local storage
     useEffect(() => {
-        if (localStorage.token && !props.isAuth) props.verifyToken(localStorage.token);
-    }, [props.isAuth, localStorage.token]);
+        if (localStorage.token && !props.isAuth) {
+            props.verifyToken(localStorage.token);
+        }
+    });
 
     return (
         <Router>
@@ -33,6 +36,7 @@ const RoutesComponent: React.FC<IRoutesComponentProps> = (props) => {
                     <Route path="/" exact component={Home}/>
                     <Route path="/auth/login" component={Login}/>
                     <Route path="/blog" component={Blog}/>
+                    <Route path="/user/:user" component={User}/>
                     <PrivateRoute path='/home' component={Blog}/>
                     <Route path="/logout" component={Logout}/>
                     <Route component={NotFound}/>

@@ -1,4 +1,4 @@
-import React, {RefObject} from 'react';
+import React, {RefObject, useRef} from 'react';
 import { Redirect } from 'react-router-dom';
 import {Box, TextField, Button, InputAdornment, createStyles, withStyles, LinearProgress } from "@material-ui/core";
 import PersonIcon from '@material-ui/icons/Person';
@@ -7,8 +7,8 @@ import {ILoginFormProps} from "./interfaces/ILoginFormProps";
 
 const LoginFormComponent: React.FC<ILoginFormProps> = (props) => {
 
-    const login: RefObject<HTMLInputElement> = React.createRef();
-    const password: RefObject<HTMLInputElement>= React.createRef();
+    const login: RefObject<HTMLInputElement> = useRef(null);
+    const password: RefObject<HTMLInputElement>= useRef(null);
 
     const handleLoginClick = () => {
         if (login.current && password.current) {
