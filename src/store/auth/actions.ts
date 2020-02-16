@@ -1,9 +1,7 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk'
 import {AnyAction} from 'redux';
 import {API} from '../../config/api';
-
 import {setCurrentUser} from "../User/actions";
-import {IUser} from "../User/interfaces/IUser";
 import {IToggleAuthAction} from "./interfaces/ToggleAuthAction";
 import {IIsLoadingAction} from "./interfaces/IsLoadingAction";
 import {ISetShowErrorAction} from "./interfaces/SetShowErrorAction";
@@ -52,7 +50,7 @@ export const fetchUserAuth = (login: string, password: string): ThunkAction<Prom
         .then(response => {
             if(response.ok) {
                 response.json().then(function(data) {
-                    const user: IUser = data.user;
+                    const user = data.user;
                     localStorage.token = user.token;
                     dispatch(setCurrentUser(user));
                     dispatch(toggleAuth(true));
@@ -80,7 +78,7 @@ export const verifyToken = (token: string): ThunkAction<Promise<void>, {}, {}, A
             .then(response => {
                 if(response.ok) {
                     response.json().then(function(data) {
-                        const user: IUser = data.user;
+                        const user = data.user;
                         localStorage.token = user.token;
                         dispatch(setCurrentUser(user));
                         dispatch(toggleAuth(true));

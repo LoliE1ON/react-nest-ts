@@ -1,5 +1,7 @@
-import {IUser} from "./IUser";
+import {IUser} from "./User";
+import {IPublicUser} from "./PublicUser";
 
 export interface IUserState {
-    currentUser: IUser,
+    currentUser: IUser;
+    profileUser: IPublicUser;
 }
