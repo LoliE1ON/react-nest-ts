@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867904d-7e9b-40e6-8afe-1446139a74ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Breadcrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/interfaces/BreadcrumbsProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/interfaces/LogoutContainerProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/LoginForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Breadcrumbs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Logout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Logout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NotFound.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +93,9 @@
       <workItem from="1581666740120" duration="2315000" />
       <workItem from="1581673629807" duration="4460000" />
       <workItem from="1581679740197" duration="598000" />
-      <workItem from="1581687466293" duration="3432000" />
+      <workItem from="1581687466293" duration="4074000" />
+      <workItem from="1581698770190" duration="147000" />
+      <workItem from="1581844944863" duration="3811000" />
     </task>
     <servers />
   </component>
@@ -126,5 +139,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="459" y="217" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1580983734516" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1581847511589">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1581847511589" />
   </component>
 </project>

@@ -2,24 +2,17 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {connect} from "react-redux";
 
-interface IPrivateRouteProps {
+interface IPrivateRouteContainerProps {
     component: any; // React.FC | React.Component? :thinking
     path: string;
     isAuth?: boolean;
 }
 
-class PrivateRouteContainer extends React.Component<IPrivateRouteProps> {
-    render() {
-        return (
-            <React.Fragment>
-                { this.props.isAuth ? <Route path={this.props.path} component={this.props.component}/> : <Redirect to="/auth/login"/> }
-            </React.Fragment>
-        );
-    }
-}
+const PrivateRouteContainer: React.FC<IPrivateRouteContainerProps> = (props) => (
+    <React.Fragment>
+        { props.isAuth ? <Route path={props.path} component={props.component}/> : <Redirect to="/auth/login"/> }
+    </React.Fragment>
+);
 
-const mapStateToProps = (state: any) => ({
-    isAuth: state.auth.isAuth
-});
-
+const mapStateToProps = (state: any) => ({ isAuth: state.auth.isAuth });
 export const PrivateRoute = connect(mapStateToProps, null)(PrivateRouteContainer);

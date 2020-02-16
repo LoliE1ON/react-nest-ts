@@ -1,23 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Redirect } from "react-router-dom";
 import {connect} from "react-redux";
 import {toggleAuth} from "../store/auth/actions";
+import {ILogoutContainerProps} from "./interfaces/LogoutContainerProps";
 
-class LogoutContainer extends React.Component<{ toggleAuth(state: boolean): void }> {
+const LogoutContainer: React.FC<ILogoutContainerProps> = (props) => {
 
-    render() {
-        return (<Redirect to="/"/>);
-    }
-
-    componentDidMount(): void {
-        // Logout
+    useEffect(() => {
         localStorage.removeItem('token');
-        this.props.toggleAuth(false);
-    }
-}
-
-const mapDispatchToProps = {
-    toggleAuth,
+        props.toggleAuth(false);
+    });
+    
+    return (<Redirect to="/"/>);
 };
+
+const mapDispatchToProps = { toggleAuth };
 
 export const Logout = connect(null, mapDispatchToProps)(LogoutContainer);

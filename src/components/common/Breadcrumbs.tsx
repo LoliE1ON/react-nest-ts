@@ -4,6 +4,24 @@ import {Box, Breadcrumbs, Link, Typography, withStyles} from "@material-ui/core"
 import {IBreadcrumbsProps} from "./interfaces/BreadcrumbsProps";
 import {Link as RouterLink} from "react-router-dom";
 
+const BreadcrumbsContainer: React.FC<IBreadcrumbsProps> = (props) => {
+    const { classes } = props;
+
+    return (
+        <Box p={2}>
+            <Breadcrumbs aria-label="breadcrumb">
+                <Link className={classes.link} color="inherit"  component={RouterLink} to="/">
+                    <AppsIcon className={classes.icon}/>
+                    Home
+                </Link>
+                <Typography color="textPrimary">
+                    Blog
+                </Typography>
+            </Breadcrumbs>
+        </Box>
+    );
+};
+
 const classes = {
     link: {
         display: 'flex',
@@ -13,26 +31,5 @@ const classes = {
         height: 20,
     },
 };
-
-class BreadcrumbsContainer extends React.Component<IBreadcrumbsProps> {
-    render() {
-
-        const { classes } = this.props;
-
-        return (
-            <Box p={2}>
-                <Breadcrumbs aria-label="breadcrumb">
-                    <Link className={classes.link} color="inherit"  component={RouterLink} to="/">
-                        <AppsIcon className={classes.icon}/>
-                        Home
-                    </Link>
-                    <Typography color="textPrimary">
-                        Blog
-                    </Typography>
-                </Breadcrumbs>
-            </Box>
-        );
-    }
-}
 
 export const BreadcrumbsComponent = withStyles(classes)(BreadcrumbsContainer);

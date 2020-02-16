@@ -1,48 +1,36 @@
 import React, {RefObject} from "react";
-import {Box, Container, createStyles, Paper, TextField, Theme, withStyles} from "@material-ui/core";
-
+import {Box, createStyles, Paper, TextField, withStyles} from "@material-ui/core";
 import {IBlogFormProps} from "./interfaces/BlogFormProps";
-import {IBlogFormState} from "./interfaces/BlogFormState";
-import {LoginForm} from "../auth/login/LoginForm";
 
-export class BlogFormComponent extends React.Component<IBlogFormProps, IBlogFormState> {
+const BlogFormComponent: React.FC<IBlogFormProps> = (props) => {
 
-    private readonly description: RefObject<HTMLInputElement>;
-
-    constructor(props: IBlogFormProps) {
-        super(props);
-        this.description = React.createRef();
-    }
-
-    private onAddBlog = (event: React.KeyboardEvent) => {
-        if (this.description.current && event.key === "Enter" && this.description.current.value.length > 0) {
-            this.props.addNewBlog({
-                description: this.description.current.value,
+    const description: RefObject<HTMLInputElement> = React.createRef();
+    const onAddBlog = (event: React.KeyboardEvent) => {
+        if (description.current && event.key === "Enter" && description.current.value.length > 0) {
+            props.addNewBlog({
+                description: description.current.value,
                 date: '123',
             });
         }
     };
 
-    render() {
-        const { classes } = this.props;
-        return(
-            <div>
-
-                <Paper elevation={1}>
-                    <Box p={4} textAlign="center">
-                        <TextField
-                        inputRef={this.description} className={classes.field} variant="outlined"
-                        id="description" label="What's happened?" multiline rows="4" onKeyPress={this.onAddBlog}
+    const { classes } = props;
+    return(
+        <div>
+            <Paper elevation={1}>
+                <Box p={4} textAlign="center">
+                    <TextField
+                        inputRef={description} className={classes.field} variant="outlined"
+                        id="description" label="What's happened?" multiline rows="4" onKeyPress={onAddBlog}
                     />
-                    </Box>
-                </Paper>
+                </Box>
+            </Paper>
+        </div>
+    );
 
-            </div>
-        );
-    }
-}
+};
 
-const styles = (theme: Theme) => createStyles({
+const styles = () => createStyles({
     field: {
         width: '100%',
         boxSizing: 'border-box'

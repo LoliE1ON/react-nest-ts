@@ -15,36 +15,34 @@ interface IHeaderProps {
     };
 }
 
-class HeaderComponent extends React.Component<IHeaderProps> {
-    render() {
-        const { isAuth, classes } = this.props;
-        return (
-            <div className={classes.root}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"
-                                    component={Link} to="/">
-                            <AppsIcon/>
-                        </IconButton>
-                        <Typography variant="h6" className={classes.title}>
-                            Application
-                        </Typography>
+const HeaderComponent: React.FC<IHeaderProps> = (props) => {
+    const { isAuth, classes } = props;
+    return (
+        <div className={classes.root}>
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"
+                                component={Link} to="/">
+                        <AppsIcon/>
+                    </IconButton>
+                    <Typography variant="h6" className={classes.title}>
+                        Application
+                    </Typography>
 
-                        { isAuth ?
-                            <div>
-                                <Button color="inherit" component={Link} to="/blog">Blog</Button>
-                                <Button color="inherit" component={Link} to="/logout"><ExitToAppIcon/></Button>
-                            </div>
-                            :
-                            <Button color="inherit" component={Link} to="/auth/login">Login</Button>
-                        }
+                    { isAuth ?
+                        <div>
+                            <Button color="inherit" component={Link} to="/blog">Blog</Button>
+                            <Button color="inherit" component={Link} to="/logout"><ExitToAppIcon/></Button>
+                        </div>
+                        :
+                        <Button color="inherit" component={Link} to="/auth/login">Login</Button>
+                    }
 
-                    </Toolbar>
-                </AppBar>
-            </div>
-        );
-    }
-}
+                </Toolbar>
+            </AppBar>
+        </div>
+    );
+};
 
 const styles = (theme: Theme) => createStyles({
     root: {

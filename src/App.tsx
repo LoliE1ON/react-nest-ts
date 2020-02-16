@@ -8,14 +8,12 @@ import { Routes } from './Routes';
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
-class App extends React.Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <Routes/>
-            </Provider>
-        )
-    }
-}
+const App: React.FC = () => {
+    return (
+        <Provider store={store}>
+            <Routes/>
+        </Provider>
+    )
+};
 
 export default App;
