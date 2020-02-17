@@ -6,6 +6,7 @@ import * as _ from 'lodash';
 import {IUser} from './interfaces/user.interface';
 import {UserDto} from './dto/User.dto';
 import {rolesEnum} from './emuns/roles.emun';
+import {GetUserDto} from "./dto/getUser.dto";
 
 @Injectable()
 export class UserService {
@@ -20,7 +21,7 @@ export class UserService {
         return await user.save();
     }
 
-    // Find user by ID
+    // Find user by login
     async findOne(login: string): Promise<IUser> {
         return await this.userModel.findOne({login}).exec();
     }

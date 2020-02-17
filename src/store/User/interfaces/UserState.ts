@@ -3,5 +3,5 @@ import {IPublicUser} from "./PublicUser";
 
 export interface IUserState {
     currentUser: IUser;
-    profileUser: IPublicUser;
+    profileUser: IPublicUser[];
 }

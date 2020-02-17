@@ -8,6 +8,9 @@ export const API = {
         },
         blog: {
             create: "blog/create",
+        },
+        user: {
+            get: "user/get",
         }
     }
 }

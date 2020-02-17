@@ -8,9 +8,7 @@ const initialState: IUserState = {
         login: '',
         token: '',
     },
-    profileUser: {
-        login: '',
-    },
+    profileUser: [],
 };
 
 export const userReducer = (state = initialState, action: UserActions): IUserState => {
@@ -18,7 +16,13 @@ export const userReducer = (state = initialState, action: UserActions): IUserSta
         case SET_CURRENT_USER:
             return Object.assign({}, state, { currentUser: action.payload, });
         case SET_PROFILE_USER:
-            return Object.assign({}, state, { profileUser: action.payload, });
+            return Object.assign({}, state, { profileUser: [
+                ...state.profileUser,
+                {
+                    login: action.payload.login,
+                    userId: action.payload.userId,
+                }
+            ]});
         default:
             return state;
     }

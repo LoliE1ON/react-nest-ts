@@ -86,7 +86,7 @@ export const verifyToken = (token: string): ThunkAction<Promise<void>, {}, {}, A
                 }
 
             }).catch(reason => {
-
+                console.error(reason);
             });
 
     }
